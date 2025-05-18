@@ -7,6 +7,8 @@
 </head>
 <body>
   
+<div class="h-screen w-screen justify-center align-middle">
+
   <form method="post" action="{{ route('store') }}" style="padding: 1em; border: 2px solid black;">
     @csrf
     <label for="subject"> Subject:
@@ -33,12 +35,14 @@
 
   </form>
 
-  <div class="container sm color bg-red-300"></div>
 
   @if(isset($subject))
       {{ $subject }} {{ $section }} {{ $description }} {{ $units }} {{ $day }} {{ $time }}
   @endif    
+
   
+
+</div>
  
 
 </body>

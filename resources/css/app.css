@@ -1,3 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+input{
+  background-color: black;
+  color: white;
+  padding: .3em;
+}
+
+table, th, tr, td, tbody{
+  min-height: 3em;
+  min-width: 8em;
+  padding: 1em;
+  outline-color: black;
+  border: 6px solid black;
+}
+
+form >*{
+  padding: 1em;
+  font-size: 1.2rem;
+  border: 1px solid black;
+}
